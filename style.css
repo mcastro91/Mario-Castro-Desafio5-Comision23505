@@ -1,0 +1,613 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Inicio estilo body index desktop */
+.body-index{
+    background-image: url(asset/monumental-1.jpg);
+    background-size: cover;
+}
+/* Fin estilo body index desktop */
+
+/* Inicio estilo header */
+nav{
+    background: linear-gradient(to top, black, white);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.header-nav-a{
+    text-decoration: none;
+    background-color:#f74520;
+    color: white;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 7px;
+    font-style: italic;
+    font-size: 25px;
+    transition: .5s;
+}
+.header-nav-a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.boton{
+    color: white;
+    background-color: #f74520;
+    font-style: italic;
+    font-size: 25px;
+    transition: .5s;
+}
+.boton:hover{
+    color: black;
+    background-color: white;
+}
+/* Fin estilo header */
+
+/* Inicio estilo footer */
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-lista{
+    list-style: none;
+    font-size: 20px;
+}
+.footer-lista-dos{
+    list-style: none;
+    font-size: 20px;
+}
+.footer-lista-redes{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+.footer-nav{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.footer-nav:hover{
+    font-size: 30px;
+    color: red;
+}
+.redes{
+    margin: 2px;
+}
+/* Fin estilo footer */
+
+/* Inicio estilo grid index */
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section-index"
+    "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+/* Fin estilo grid index */
+
+/* Inicio definicion areas grid index */
+header{
+    grid-area: header;
+}
+.section-index{
+    grid-area: section-index;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas grid index */
+
+/* Inicio estilo h1 */
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+/* Fin estilo h1 */
+
+/* Inicio animacion titulo */
+@keyframes titulo {
+    0% {opacity: 0;}
+    100% {opacity: 1;}   
+}
+/* Fin animacion titulo */
+
+/* Inicio estilo parrafos index */
+.parrafo-index{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+.parrafo-index:hover{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
+/* Fin estilo parrafos index */
+
+/* Inicio estilo grid galeria */
+#grilla-galeria{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "aside video-uno"
+    "aside video-dos"
+    "aside fotos"
+    "footer footer";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 280px auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+/* Fin estilo grid galeria */
+
+/* Inicio definicion areas grid galeria */
+header{
+    grid-area: header;
+}
+.titulo{
+    grid-area: titulo;
+}
+.fotos{
+    grid-area: fotos;
+}
+.video-uno{
+    grid-area: video-uno;
+}
+.video-dos{
+    grid-area: video-dos;
+}
+.campaña-socio{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas grid galeria */
+
+/* Inicio estilo body galeria */
+.body-galeria{
+    background:linear-gradient(to top, tomato, black, tomato)
+}
+/* Fin estilo body galeria */
+
+/* Inicio estilo aside */
+aside{
+    position:fixed;
+    margin-top: 230px;
+    margin-left: 20px;
+}
+/* Fin estilo aside */
+
+/* Inicio estilo img y vid */
+.media{
+    width: 840px;
+    height: 473px;
+    border: 2px solid white;
+    margin: 4px;
+    transition: 1s;
+}
+.video{
+    width: 840px;
+    height: 473px;
+    border: 2px solid white;
+    margin: 4px;
+    transition: 1s;
+}
+/* Fin estilo img y vid */
+
+/* Inicio grid ubicacion */
+#grilla-ubicacion{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "aside mapa-uno"
+    "aside mapa-dos"
+    "footer footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 280px auto;
+}
+/* Fin grid ubicacion */
+
+/* Inicio definicion areas ubicacion */
+header{
+    grid-area: header;
+}
+.titulo{
+    grid-area: titulo;
+}
+.campaña-socio{
+    grid-area: aside;
+}
+#mapa-uno{
+    grid-area: mapa-uno;
+}
+#mapa-dos{
+    grid-area: mapa-dos;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas ubicacion */
+
+/* Inicio estilo body ubicacion */
+.body-ubicacion{
+    background: radial-gradient(tomato, black)
+}
+/* Fin estilo body ubicacion */
+
+/* Inicio estilo h dos */
+.titulo-dos{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    background-color: white;
+}
+/* Fin estilo h dos */
+
+/* Inicio estilo mapas */
+.maps{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+/* Fin estilo mapas */
+
+/* Inicio estilo body faq */
+.body-faq{
+    background-image: url(asset/RiverIcono.jpg);
+    background-repeat: repeat;
+    background-color: tomato;
+}
+/* fin estilo body faq */
+
+/* Inicio estilo titulo faq */
+.titulo-faq{
+    background-color: tomato;
+    padding: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Fin estilo titulo faq */
+
+/* Inicio estilo grilla faq */
+#grilla-faq{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "titulo"
+    "faq"
+    "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+/* Fin estilo grilla faq */
+
+/* Inicio definicion areas faq */
+header{
+    grid-area: header;
+}
+.titulo-faq{
+    grid-area: titulo;
+}
+.parrafo-faq{
+    grid-area: faq;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas faq */
+
+/* Inicio estilo parrafo faq */
+.parrafo-faq{
+    margin-top: 20px;
+}
+/* Fin estilo parrafo faq */
+
+/* Inicio estilo respuestas faq */
+.respuestas-link{
+    text-decoration: none;
+}
+/* Fin estilo respuestas faq */
+
+.preguntas{
+    font-weight: bolder;
+    background-color: tomato;
+}
+
+
+/* Inicio asociate */
+
+/* Inicio grilla asociate */
+#grilla-asociate{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "titulo"
+    "asociate"
+    "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+/* Fin estilo grilla asociate */
+
+/* Inicio definicion areas asociate */
+header{
+    grid-area: header;
+}
+.titulo-asociate{
+    grid-area: titulo;
+}
+.formulario{
+    grid-area: asociate;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas asociate */
+
+/* Inicio estilo body asociate */
+.body-asociate{
+    background-image: url(asset/river-jugadores.jpg);
+    background-position-y: -15px;
+}
+/* Fin estilo body asociate */
+
+/* Inicio estilo formulario */
+.asociate{
+    justify-self: center;
+}
+.formulario{
+    justify-content: center;
+    background-color: tomato ;
+    padding: 10px;
+    margin-top: 20px;
+}
+.botones{
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+/* Fin estilo formulario */
+
+/* Inicio MQ 768px */
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Inicio estilo header 768px */
+    .header-nav-a{
+        background-color: none;
+        border-radius: 10px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 20px;
+    }
+    .pad{
+        padding: 2px;
+    }
+    /* Fin estilo header 768px */
+
+    /* Inicio estilo footer 768px */
+     .footer-lista{
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    .footer-lista-dos{
+        list-style: none;
+        font-size: 20px;
+    }
+    /* Fin estilo footer 786px */
+
+    /* Inicio estilo body-index 768px */
+    .body-index{
+        background-size: contain;
+    }
+    /* Fin estilo body-index 768px */
+
+    /* Inicio estilo h1 768px */
+    h1{
+        font-size: 40px;
+    }
+    /* Fin estilo h1 768px */
+
+    /* Inicio estilo parrafos index 768px */
+    .parrafo-index{
+        font-size: 15px;
+    }
+    /* Fin estilo parrafos index 768px */
+
+    /* Inicio estilo grid galeria 768px */
+    #grilla-galeria{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "video-uno"
+        "video-dos"
+        "fotos"
+        "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Fin estilo grid galeria 768px */
+
+    /* Inicio estilo galeria img y vid 768 */
+    .video{
+        width: 530px;
+        height: 315px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Fin estilo galeria img y vid768px */
+
+    /* Inicio estilo aside 768px */
+    .campaña-socio{
+        display: none;
+    }
+    /* Fin estilo galeria aside 768px */
+
+    /* Inicio estilo grid ubicacion 768px */
+    #grilla-ubicacion{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "mapa-uno"
+        "mapa-dos"
+        "footer";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Fin estilo grid ubicacion 768px */
+
+    /* Inicio estilo ubicacion mapas 768px */
+    .maps{
+        width: 530px;
+        height: 315px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Fin estilo ubicacion mapas 768px */
+
+    /* Inicio estilo h dos */
+        .titulo-dos{
+        width: 100%;
+    }
+    /* Fin estilo h dos */
+
+    /* Inicio estilo body asociate 768px */
+    .body-asociate{
+        background:linear-gradient(to bottom, red, white)
+    }
+    /* Fin estilo body asociate 768px */
+
+    /* Inicio estilo formulario 768px */
+    .formulario{
+        margin-left: 0px;
+    }
+    
+}
+/* Fin MQ 768px */
+
+/* Inicio MQ 426px */
+@media screen and (max-width: 426px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Inicio estilo header 426px */
+    header nav a{
+        padding: 5px;
+        font-size: 15px;
+    }
+    /* Fin estilo header 426px */
+
+    /* Inicio estilo footer 426px */
+    footer{
+        margin-top: 30px;
+    }
+    .footer-lista{
+        font-size: 15px;
+    }
+    .footer-lista-dos{
+        font-size: 15px;
+    }
+    /* Fin estilo footer 426px */
+
+    /* Inicio estilo h1 426px */
+    h1{
+        font-size: 30px;
+    }
+    /* Fin estilo h1 426px */
+
+    /* Inicio estilo parrafos index 426px */
+    .parrafo-index{
+        font-size: 10px;
+    }
+    /* Fin estilo parrafos index 426px */
+
+    /* Inicio estilo galeria img y vid 426px */
+    .video{
+        width: 398px;
+        height: 237px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    /* Fin estilo galeria img y vid 426px */
+
+    /* Inicio estilo ubicacion maps 426px */
+    .maps{
+        width: 398px;
+        height: 237px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    /* Fin estilo ubicacion maps 426px */
+
+    /* Inicio estilo h dos 426px */
+    .titulo-dos{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    /* Fin estilo h dos 426px */
+
+    /* Inicio estilo formulario 426px */
+    .formulario{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .botones{
+        border: 1px solid white;
+        color: white;
+        background-color: black;
+        padding: 5px;
+    }
+    /* Fin estilo formulario 426px */
+}
+/* Fin MQ 426px */
