@@ -1,0 +1,81 @@
+/* Inicio estilo body galeria */
+.body-galeria {
+    background: linear-gradient(to top, tomato, black, tomato)
+}
+
+/* Fin estilo body galeria */
+
+/* Inicio estilo aside */
+aside {
+    position: fixed;
+    margin-top: 230px;
+    margin-left: 20px;
+}
+
+/* Fin estilo aside */
+
+/* Inicio estilo img y vid */
+.media {
+    width: 840px;
+    height: 473px;
+    border: 2px solid white;
+    margin: 4px;
+    transition: 1s;
+}
+
+.video {
+    width: 840px;
+    height: 473px;
+    border: 2px solid white;
+    margin: 4px;
+    transition: 1s;
+}
+
+/* Fin estilo img y vid */
+
+/* Inicio MQ 768px */
+@media screen and (max-width: 768px) {
+
+    /* Inicio estilo galeria img y vid 768 */
+    .video {
+        width: 530px;
+        height: 315px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .media{
+        width: 530px;
+        height: 315px;
+    }
+
+    /* Fin estilo galeria img y vid768px */
+
+    /* Inicio estilo aside 768px */
+    .campaña-socio {
+        display: none;
+    }
+
+    /* Fin estilo galeria aside 768px */
+}
+
+/* Fin MQ 768px */
+
+/* Inicio MQ 426px */
+@media screen and (max-width: 426px) {
+
+    /* Inicio estilo galeria img y vid 426px */
+    .video {
+        width: 398px;
+        height: 237px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .media{
+        width: 398px;
+        height: 237px;
+    }
+
+    /* Fin estilo galeria img y vid 426px */
+}
+
+/* Fin MQ 426px */

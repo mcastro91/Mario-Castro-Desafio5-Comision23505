@@ -1,0 +1,25 @@
+{
+  "name": "mario-castro-desafio6-comision23505",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcastro91/Mario-Castro-Desafio5-Comision23505.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcastro91/Mario-Castro-Desafio5-Comision23505/issues"
+  },
+  "homepage": "https://github.com/mcastro91/Mario-Castro-Desafio5-Comision23505#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

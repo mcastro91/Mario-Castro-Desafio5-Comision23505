@@ -1,0 +1,100 @@
+/* Inicio estilo grid index */
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "section-index"
+        "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+
+/* Fin estilo grid index */
+
+/* Inicio definicion areas grid index */
+header {
+    grid-area: header;
+}
+
+.section-index {
+    grid-area: section-index;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Fin definicion areas grid index */
+
+/* Inicio estilo grid galeria */
+#grilla-galeria {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "titulo titulo"
+        "aside video-uno"
+        "aside video-dos"
+        "aside fotos"
+        "footer footer";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 280px auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/* Fin estilo grid galeria */
+
+/* Inicio definicion areas grid galeria */
+header {
+    grid-area: header;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.fotos {
+    grid-area: fotos;
+}
+
+.video-uno {
+    grid-area: video-uno;
+}
+
+.video-dos {
+    grid-area: video-dos;
+}
+
+.campaña-socio {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Fin definicion areas grid galeria */
+
+/* Inicio MQ 768px */
+@media screen and (max-width: 768px) {
+
+    /* Inicio estilo grid galeria 768px */
+    #grilla-galeria {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "titulo"
+            "video-uno"
+            "video-dos"
+            "fotos"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    /* Fin estilo grid galeria 768px */
+}
+
+/* Fin MQ 768px */
